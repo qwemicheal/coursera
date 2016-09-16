@@ -1,0 +1,78 @@
+[0m[[0minfo[0m] [0mRunning reductions.ParallelParenthesesBalancingRunner [0m
+[0m[[0mdebug[0m] [0mWaiting for threads to exit or System.exit to be called.[0m
+[0m[[0mdebug[0m] [0m  Classpath:[0m
+[0m[[0mdebug[0m] [0m	C:\coursa\reductions\target\scala-2.11\classes[0m
+[0m[[0mdebug[0m] [0m	C:\Users\hy\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.7.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\hy\.ivy2\cache\org.scalatest\scalatest_2.11\bundles\scalatest_2.11-2.2.4.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\hy\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.2.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\hy\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.2.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\hy\.ivy2\cache\com.storm-enroute\scalameter-core_2.11\jars\scalameter-core_2.11-0.6.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\hy\.ivy2\cache\org.apache.commons\commons-math3\jars\commons-math3-3.2.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\hy\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.1.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\hy\.ivy2\cache\com.github.scala-blitz\scala-blitz_2.11\jars\scala-blitz_2.11-1.1.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\hy\.ivy2\cache\org.scala-lang.modules\scala-swing_2.11\bundles\scala-swing_2.11-1.0.1.jar[0m
+[0m[[0mdebug[0m] [0mWaiting for thread run-main-1 to terminate.[0m
+[0m[[31merror[0m] [0m(run-main-1) java.lang.OutOfMemoryError: Java heap space[0m
+java.lang.OutOfMemoryError: Java heap space
+	at scala.collection.mutable.ArrayBuilder$ofChar.mkArray(ArrayBuilder.scala:258)
+	at scala.collection.mutable.ArrayBuilder$ofChar.resize(ArrayBuilder.scala:264)
+	at scala.collection.mutable.ArrayBuilder$ofChar.sizeHint(ArrayBuilder.scala:269)
+	at scala.collection.IndexedSeqOptimized$class.slice(IndexedSeqOptimized.scala:115)
+	at scala.collection.mutable.ArrayOps$ofChar.slice(ArrayOps.scala:222)
+	at scala.collection.IndexedSeqOptimized$class.tail(IndexedSeqOptimized.scala:129)
+	at scala.collection.mutable.ArrayOps$ofChar.tail(ArrayOps.scala:222)
+	at reductions.ParallelParenthesesBalancing$.check$1(ParallelParenthesesBalancing.scala:53)
+	at reductions.ParallelParenthesesBalancing$.balance(ParallelParenthesesBalancing.scala:56)
+	at reductions.ParallelParenthesesBalancingRunner$$anonfun$1.apply$mcV$sp(ParallelParenthesesBalancing.scala:25)
+	at reductions.ParallelParenthesesBalancingRunner$$anonfun$1.apply(ParallelParenthesesBalancing.scala:25)
+	at reductions.ParallelParenthesesBalancingRunner$$anonfun$1.apply(ParallelParenthesesBalancing.scala:25)
+	at org.scalameter.MeasureBuilder$$anonfun$measure$1.apply(MeasureBuilder.scala:53)
+	at org.scalameter.MeasureBuilder$$anonfun$measureWith$3.apply(MeasureBuilder.scala:36)
+	at org.scalameter.MeasureBuilder$$anonfun$measureWith$3.apply(MeasureBuilder.scala:36)
+	at org.scalameter.Warmer$Default$$anon$2$$anonfun$foreach$1.apply$mcV$sp(Warmer.scala:54)
+	at org.scalameter.Warmer$Default$$anon$2$$anonfun$foreach$1.apply(Warmer.scala:47)
+	at org.scalameter.Warmer$Default$$anon$2$$anonfun$foreach$1.apply(Warmer.scala:47)
+	at org.scalameter.utils.package$.withGCNotification(package.scala:26)
+	at org.scalameter.Warmer$Default$$anon$2.foreach(Warmer.scala:47)
+	at org.scalameter.MeasureBuilder.measureWith(MeasureBuilder.scala:36)
+	at org.scalameter.MeasureBuilder.measure(MeasureBuilder.scala:53)
+	at reductions.ParallelParenthesesBalancingRunner$.main(ParallelParenthesesBalancing.scala:24)
+	at reductions.ParallelParenthesesBalancingRunner.main(ParallelParenthesesBalancing.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sbt.Run.invokeMain(Run.scala:67)
+	at sbt.Run.run0(Run.scala:61)
+	at sbt.Run.sbt$Run$$execute$1(Run.scala:51)
+	at sbt.Run$$anonfun$run$1.apply$mcV$sp(Run.scala:55)
+[0m[[0mdebug[0m] [0m	Thread run-main-1 exited.[0m
+[0m[[0mdebug[0m] [0mInterrupting remaining threads (should be all daemons).[0m
+[0m[[0mdebug[0m] [0mSandboxed run complete..[0m
+java.lang.RuntimeException: Nonzero exit code: 1
+	at scala.sys.package$.error(package.scala:27)
+	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1966)
+	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1966)
+	at scala.Option.foreach(Option.scala:236)
+	at sbt.BuildCommon$class.toError(Defaults.scala:1966)
+	at sbt.Defaults$.toError(Defaults.scala:39)
+	at sbt.Defaults$$anonfun$runMainTask$1$$anonfun$apply$34$$anonfun$apply$35.apply(Defaults.scala:724)
+	at sbt.Defaults$$anonfun$runMainTask$1$$anonfun$apply$34$$anonfun$apply$35.apply(Defaults.scala:722)
+	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47)
+	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:40)
+	at sbt.std.Transform$$anon$4.work(System.scala:63)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)
+	at sbt.Execute.work(Execute.scala:235)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159)
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:28)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[0m[[31merror[0m] [0m(compile:[31mrunMain[0m) Nonzero exit code: 1[0m

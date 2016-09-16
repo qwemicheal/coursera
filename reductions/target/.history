@@ -1,0 +1,29 @@
+runMain reductions.ParallelCountChangeRunner
+submit qwemicheal@gmail.com Ob5hSurfUkbZocPZ
+runMain reductions.ParallelCountChangeRunner
+runMain reductions.ParallelParenthesesBalancingRunner
+submit qwemicheal@gmail.com rOfxAw6UArQMDQMX
+runMain reductions.ParallelParenthesesBalancingRunner
+exit
+runMain reductions.ParallelParenthesesBalancingRunner
+runMain reductions.LineOfSightRunner
+submit qwemicheal@gmail.com 68rjfHYIXQsRTZPX
+exit
+runMain reductions.LineOfSightRunner
+submit qwemicheal@gmail.com 68rjfHYIXQsRTZPX
+runMain reductions.ParallelParenthesesBalancingRunner
+submit qwemicheal@gmail.com UuKTPac5YEQ9NnMi
+submit qwemicheal@gmail.com DXJKlrcx8BwFHIFj
+runMain reductions.ParallelParenthesesBalancingRunner
+exit
+runMain reductions.ParallelParenthesesBalancingRunner
+runMain reductions.LineOfSightRunner
+submit qwemicheal@gmail.com kKgPXrkVbBwrIKSg
+submit qwemicheal@gmail.com UT7JLIpnU2M4s62O
+submit qwemicheal@gmail.com GuFim1grj5OFe6im
+submit qwemicheal@gmail.com X0QwXDSdYG5JcuJx
+submit qwemicheal@gmail.com qoF98sJbnYmhkxKd
+console
+submit qwemicheal@gmail.com 5fkOBoBwonyblA1h
+runMain reductions.ParallelCountChangeRunner
+runMain reductions.ParallelParenthesesBalancingRunner
